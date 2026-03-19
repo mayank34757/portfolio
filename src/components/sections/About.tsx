@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { services } from "../../constants";
 import { mayank } from "../../assets";
 import { SectionWrapper } from "../../hoc";
-import { fadeIn, textVariant } from "../../utils/motion";
+import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
-import { styles } from "../../constants/styles";
+
 
 interface IServiceCard {
   index: number;
