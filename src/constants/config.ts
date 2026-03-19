@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "Nihal kumar singh",
-    fullName: "Nihal",
-    email: "nihalsinghwithroman@gmail.com",
+    title: "Mayank Yadav – Portfolio",
+    fullName: "Mayank",
+    email: "mayankggg788@gmail.com",
   },
   hero: {
-    name: "Nihal kumar singh",
-    p: ["I develop creative visuals, user", "interfaces and web applications"],
+    name: "Mayank Yadav",
+    p: ["I build AI-powered apps, dashboards,", "and data-driven web applications"],
   },
   contact: {
     p: "Get in touch",
@@ -67,10 +67,11 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I am an aspiring Software Developer and being a developer brings you many challenges and different view to see the teach world like each function and working of any technology that makes you think how they have developed this unique updates.
-I'm also learning Devops so that to understand how the team work is envolved and all the working process behind the development and being in efficient using AI in development. 
-I have worked on many levels problem of DSA using Java to be efficient in algorithm and problem solving. 
-In web development I'm proficient in React. js for the frontend development and for the backend I have learnt MongoDB, SQL.`,
+      content: `I'm Mayank Yadav, a Computer Science & Engineering student at Lovely Professional University (LPU). I build AI-powered web apps and data-driven dashboards using Java, C++, JavaScript, Python, and SQL.
+
+Beyond tech, I'm also a sportsman — sports have taught me discipline, teamwork, and perseverance that I bring into every project I work on.
+
+I'm passionate about problem-solving, open-source work, and continuous learning across full-stack development and cloud computing.`,
     },
     experience: {
       p: "What I have done so far",
@@ -83,11 +84,7 @@ In web development I'm proficient in React. js for the frontend development and 
     works: {
       p: "My work",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: `Here are some of my key projects that demonstrate my skills in web development, data analysis, and AI integration. Each project reflects my ability to solve real-world problems using modern technologies and APIs.`,
     },
   },
 };

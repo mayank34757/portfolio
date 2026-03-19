@@ -32,6 +32,10 @@ import cal from "./cal.png";
 import ecom from "./ecom.png";
 import shop from "./shop.png";
 import tripguide from "./tripguide.png";
+import stockai from "./stockai.png";
+import water from "./water.png";
+import shoppers from "./shoppers.png";
+import mayank from "./mayank.jpg";
 
 export {
   logo,
@@ -65,4 +69,8 @@ export {
   cal,
   ecom,
   tripguide,
+  stockai,
+  water,
+  shoppers,
+  mayank,
 };

@@ -6,7 +6,7 @@ import {
 
 import "react-vertical-timeline-component/style.min.css";
 
-import { certifications } from "../../constants"; // ✅ FIXED HERE
+import { certifications } from "../../constants";
 
 import { SectionWrapper } from "../../hoc";
 import { Header } from "../atoms/Header";
@@ -47,6 +47,17 @@ const CertificationCard: React.FC<TCertification> = (certification) => {
           </li>
         ))}
       </ul>
+
+      {certification.link && (
+        <a
+          href={certification.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-block rounded-lg bg-[#915EFF] px-4 py-2 text-[13px] font-semibold text-white transition-opacity hover:opacity-80"
+        >
+          🔗 View Certificate
+        </a>
+      )}
     </VerticalTimelineElement>
   );
 };

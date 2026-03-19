@@ -7,22 +7,21 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
+  NGO,
+  Resume,
   Tech,
   Works,
   StarsCanvas,
 } from "./components";
+import SectionDivider from "./components/atoms/SectionDivider";
 
 const App = () => {
   useEffect(() => {
-    // Set document title
     if (document.title !== config.html.title) {
       document.title = config.html.title;
     }
-
-    // Initialize EmailJS with public key
     const publicKey = import.meta.env.VITE_EMAIL_JS_ACCESS_TOKEN;
     if (publicKey) {
       emailjs.init(publicKey);
@@ -39,10 +38,17 @@ const App = () => {
           <Hero />
         </div>
         <About />
+        <SectionDivider />
         <Experience />
+        <SectionDivider />
         <Tech />
+        <SectionDivider />
         <Works />
-        <Feedbacks />
+        <SectionDivider />
+        <NGO />
+        <SectionDivider />
+        <Resume />
+        <SectionDivider />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

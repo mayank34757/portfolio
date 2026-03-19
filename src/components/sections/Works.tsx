@@ -18,16 +18,21 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   sourceCodeLink,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.3, 0.75)}
+      className="w-full sm:w-[calc(50%-14px)] xl:w-[calc(25%-21px)]"
+    >
       <Tilt
         glareEnable
         tiltEnable
-        tiltMaxAngleX={30}
-        tiltMaxAngleY={30}
+        tiltMaxAngleX={20}
+        tiltMaxAngleY={20}
         glareColor="#aaa6c3"
+        className="h-full"
       >
-        <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[300px]">
-          <div className="relative h-[230px] w-full">
+        <div className="bg-tertiary flex h-full flex-col rounded-2xl p-5">
+          {/* Image */}
+          <div className="relative h-[180px] w-full flex-shrink-0">
             <img
               src={image}
               alt={name}
@@ -46,16 +51,19 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
               </div>
             </div>
           </div>
-          <div className="mt-5">
-            <h3 className="text-[24px] font-bold text-white">{name}</h3>
-            <p className="text-secondary mt-2 text-[14px]">{description}</p>
-          </div>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-                #{tag.name}
-              </p>
-            ))}
+
+          {/* Text */}
+          <div className="mt-4 flex flex-1 flex-col">
+            <h3 className="text-[18px] font-bold text-white leading-snug">{name}</h3>
+            <p className="text-secondary mt-2 flex-1 text-[13px] leading-relaxed">{description}</p>
+
+            <div className="mt-3 flex flex-wrap gap-1">
+              {tags.map((tag) => (
+                <p key={tag.name} className={`text-[12px] font-medium ${tag.color}`}>
+                  #{tag.name}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </Tilt>
@@ -77,7 +85,8 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      {/* 4 cards in one row on large screens */}
+      <div className="mt-20 flex flex-wrap gap-7 items-stretch">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

@@ -8,6 +8,16 @@ export type TCertification = {
   provider: string;
   date: string;
   points: string[];
+  link?: string;
+};
+
+export type TNGOWork = {
+  orgName: string;
+  role: string;
+  period: string;
+  location: string;
+  description: string;
+  points: string[];
 };
 
 
