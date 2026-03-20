@@ -25,8 +25,38 @@ const NGOSection = () => {
             </p>
             <p className="text-secondary mt-1 text-[14px]">📍 {ngoWork.location}</p>
           </div>
-          <div className="mt-2 rounded-lg bg-[#232631] px-4 py-2 text-center sm:mt-0">
-            <p className="text-secondary text-[13px]">🗓 {ngoWork.period}</p>
+          <div className="mt-2 flex items-center gap-3 sm:mt-0">
+            <div className="rounded-lg bg-[#232631] px-4 py-2 text-center">
+              <p className="text-secondary text-[13px]">🗓 {ngoWork.period}</p>
+            </div>
+            {/* View Certificate Eye Icon */}
+            <a
+              href="https://drive.google.com/file/d/1Bt15CxGq1CCRSBbRGQSuGXDXkLOGEONW/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              title="View Certificate"
+              className="flex items-center justify-center rounded-lg border border-[#915EFF]/50 p-2 text-[#915EFF] transition-all duration-300 hover:border-[#915EFF] hover:bg-[#915EFF]/10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                />
+              </svg>
+            </a>
           </div>
         </div>
 
