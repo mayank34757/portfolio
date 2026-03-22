@@ -46,7 +46,7 @@ export const config: TConfig = {
   },
   hero: {
     name: "Mayank Yadav",
-    p: ["I build AI-powered apps, dashboards,", "and data-driven web applications"],
+    p: ["I build ML apps, dashboards,", "and data-driven applications"],
   },
   contact: {
     p: "Get in touch",
@@ -67,11 +67,11 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm Mayank Yadav, a Computer Science & Engineering student at Lovely Professional University (LPU). I build AI-powered web apps and data-driven dashboards using Java, C++, JavaScript, Python, and SQL.
+      content: `I'm Mayank Yadav, a Data Science enthusiast at Lovely Professional University (LPU). I build machine learning models, ML apps, and data-driven dashboards using Python, SQL, C++, Java, and JavaScript.
 
 Beyond tech, I'm also a sportsman — sports have taught me discipline, teamwork, and perseverance that I bring into every project I work on.
 
-I'm passionate about problem-solving, open-source work, and continuous learning across full-stack development and cloud computing.`,
+I'm passionate about problem-solving, open-source work, and continuous learning across data science, machine learning, and advanced analytics.`,
     },
     experience: {
       p: "What I have done so far",

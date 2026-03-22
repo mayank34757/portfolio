@@ -54,12 +54,16 @@ const About = () => {
         <div className="flex flex-1 flex-col justify-center">
           <Header useMotion={true} {...config.sections.about} />
 
-          <motion.p
+          <motion.div
             variants={fadeIn("", "", 0.1, 1)}
-            className="text-secondary mt-6 text-[17px] leading-[32px]"
+            className="text-secondary mt-6 text-[18px] leading-[32px]"
           >
-            {config.sections.about.content}
-          </motion.p>
+            {config.sections.about.content.split("\n\n").map((paragraph, index) => (
+              <p key={index} className="mb-4 last:mb-0">
+                {paragraph}
+              </p>
+            ))}
+          </motion.div>
 
           {/* Skill tags */}
           <motion.div
@@ -100,7 +104,7 @@ const About = () => {
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent px-5 pb-5 pt-12">
               <p className="text-[18px] font-bold text-white">Mayank Yadav</p>
               <p className="text-[13px] font-medium text-[#915EFF]">
-                CSE @ LPU &nbsp;·&nbsp; Full-Stack &amp; AI Developer
+                CSE @ LPU &nbsp;·&nbsp; Data Science &amp; ML Developer
               </p>
             </div>
           </div>
